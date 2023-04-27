@@ -22,6 +22,7 @@ struct node *insertNode(struct node *node, int key) {
     node =new struct node;
     node->key=key;
     node->left=node->right=NULL;
+    return node;
   }
   else if (key > node->key){
     node->right = insertNode(node->right, key);
